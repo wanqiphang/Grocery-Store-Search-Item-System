@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FYP_1</string>
+
+    <string name="back_button_description">Back</string>
+    <string name="picture">Choose a picture:</string>
+    <string name="search_hint">Search in Lotus’s</string>
+</resources>

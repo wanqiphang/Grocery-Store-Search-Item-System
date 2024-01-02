@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="251dp"
+        android:background="@color/lotus_green"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginTop="7pt"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5pt"
+                android:text="Lotus"
+                android:textColor="@color/lotus_white"
+                android:textSize="15pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="'s"
+                android:layout_weight="2.4"
+                android:textColor="@color/lotus_yellow"
+                android:textSize="15pt"
+                android:textStyle="bold"/>
+
+            <ImageButton
+                android:id="@+id/imageButtonAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="@null"
+                app:srcCompat="@drawable/admin"
+                android:scaleType="centerInside"
+                android:contentDescription="NULL"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerBranchMain"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:spinnerMode="dialog"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5pt"
+            android:layout_marginTop="25pt"
+            android:layout_marginRight="5pt"
+            android:background="@color/lotus_white"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/buttonSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@android:color/transparent"
+                android:gravity="left"
+                android:drawableLeft="@drawable/search_smaller"
+                android:text="Search for product"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:contentDescription="Search for a product button"/>
+
+
+            <ImageButton
+                android:id="@+id/imageButtonCamera1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/camera_icon"
+                android:contentDescription="NULL"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="255dp"
+        android:layout_marginBottom="65dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="1dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/buttonHome1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="fill_vertical|center_horizontal"
+                android:drawableTop="@drawable/home_smaller"
+                android:text="Home"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/buttonSearch1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="fill_vertical|center_horizontal"
+                android:text="Search"
+                android:drawableTop="@drawable/search_smaller"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/buttonChatbot1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="fill_vertical|center_horizontal"
+                android:text="Chatbot"
+                android:drawableTop="@drawable/chatbot_smaller"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSearchItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/light_grey">
+
+        <ImageView
+            android:id="@+id/imageResult"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:padding="4dp"
+            android:scaleType="fitCenter"/>
+
+        <!--text view for our title-->
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="TitleName"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <!--text view for our cost-->
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Item Price"
+            android:textAllCaps="false"
+            android:textColor="@color/lotus_red"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

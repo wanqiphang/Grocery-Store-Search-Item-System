@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.fyp_1">
+    <!-- below line is use to add camera feature in our app -->
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--    SQLite Database-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--    chatbot-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FYP_1">
+        <activity
+            android:name=".SpecificItemDetailAllBranch"
+            android:exported="false" />
+        <activity
+            android:name=".SpecificItemDetail"
+            android:exported="false" />
+        <activity
+            android:name=".Item.UpdateItemLocation"
+            android:exported="false" />
+        <activity
+            android:name=".Item.ViewItemLocation"
+            android:exported="false" />
+        <activity
+            android:name=".Item.AddLocation"
+            android:exported="false" />
+        <activity
+            android:name=".Item.UpdateItem"
+            android:exported="false" />
+        <activity
+            android:name=".Item.ViewItem"
+            android:exported="false" />
+        <activity
+            android:name=".Item.CreateItem"
+            android:exported="false" />
+        <activity
+            android:name=".Branch.UpdateBranch"
+            android:exported="false" />
+        <activity
+            android:name=".Branch.ViewBranch"
+            android:exported="false" />
+        <activity
+            android:name=".Branch.CreateBranch"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminLogin"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".ScanItem"
+            android:exported="false" />
+        <activity
+            android:name=".Chatbot"
+            android:exported="false" />
+        <activity
+            android:name=".SearchItem"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".Admin.AdminLogin">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Admin Login"
+                    android:textAlignment="center"
+                    android:textColor="@color/lotus_green"
+                    android:textSize="20pt"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/loginEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/login_border"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint_color"/>
+                <EditText
+                    android:id="@+id/loginPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_border"
+                    android:drawableLeft="@drawable/ic_baseline_lock_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint_color"/>
+                <Button
+                    android:id="@+id/loginButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Login"
+                    android:textSize="18sp"
+                    app:cornerRadius="30dp"
+                    android:backgroundTint="@color/lotus_yellow"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/signupRedirectText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="14dp"
+                    android:padding="8dp"
+                    android:text="Not yet registered? Signup"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

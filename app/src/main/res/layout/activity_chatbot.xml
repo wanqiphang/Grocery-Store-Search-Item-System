@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Chatbot">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/lotus_green"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Chatbot"
+            android:textAlignment="center"
+            android:textColor="@color/lotus_white"
+            android:textSize="20pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="120dp"
+        android:padding="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/chat_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="65dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColorHint="@color/black">
+            <EditText
+                android:id="@+id/message_box"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter your message"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_color"
+                android:layout_weight="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="normal"
+            android:src="@drawable/ic_send"
+            android:layout_marginStart="5dp"
+            android:background="@color/colorAccent"
+            android:contentDescription="Send"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="1dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/buttonHome1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="fill_vertical|center_horizontal"
+                android:drawableTop="@drawable/home_smaller"
+                android:text="Home"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/buttonSearch1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="fill_vertical|center_horizontal"
+                android:text="Search"
+                android:drawableTop="@drawable/search_smaller"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/buttonChatbot1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="fill_vertical|center_horizontal"
+                android:text="Chatbot"
+                android:drawableTop="@drawable/chatbot_smaller"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

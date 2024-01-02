@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:padding="10dp"
+    tools:context=".Item.UpdateItemLocation"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Update Location"
+        android:textSize="20dp"
+        android:textColor="@color/lotus_green"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"/>
+
+
+    <ImageView
+        android:id="@+id/imageViewUpdateItemLocateImage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/textViewItemName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:textColor="@color/lotus_green"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerUpdateLocateBranch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        android:spinnerMode="dialog"
+        android:backgroundTint="@color/light_grey"/>
+
+    <EditText
+        android:id="@+id/itemUpdateLocationEdit"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="Enter the Item Location in Store"
+        android:padding="12dp"
+        android:gravity="top"
+        android:textSize="20dp"
+        android:layout_below="@id/spinnerLocateBranch"
+        android:background="@drawable/login_border"
+        android:layout_marginTop="10dp"
+        android:maxLines="3"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemLocationEdit"
+        android:layout_marginTop="20dp"
+        android:weightSum="3">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:backgroundTint="@color/lotus_red"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/back_button_description"
+            android:onClick="onBackButtonClick"/>
+
+        <Button
+            android:id="@+id/buttonUpdateItemLocateDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:backgroundTint="@color/lotus_yellow"
+            android:layout_weight="1"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

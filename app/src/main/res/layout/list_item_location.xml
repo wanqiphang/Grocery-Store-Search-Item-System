@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    android:background="@drawable/background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/light_grey">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/updateItemLocationButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="36dp"
+                app:srcCompat="@drawable/edit" />
+
+            <ImageView
+                android:id="@+id/deleteItemLocationButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                app:srcCompat="@drawable/baseline_delete_24" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewItemBranchName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Branch Name"
+            android:textColor="@color/black"
+            android:maxLines="3"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/textViewItemLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Location"
+            android:textColor="@color/black"
+            android:maxLines="3"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
